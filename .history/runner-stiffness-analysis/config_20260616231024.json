@@ -1,0 +1,20 @@
+{
+  "data_processing": {
+    "weight_min": 45,
+    "weight_max": 160,
+    "force_min": 500,
+    "force_max": 5000,
+    "shoe_min": 30,
+    "shoe_max": 50
+  },
+  "clustering": {
+    "q": 3,
+    "labels": ["Soft", "Medium", "Firm"]
+  }
+  ,
+  "fabrication_constraints": {
+    "min_thickness": 2.0,
+    "max_thickness": 4.5,
+    "min_hole_diameter": 0.5,
+  }
+}
