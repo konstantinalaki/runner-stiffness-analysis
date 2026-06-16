@@ -13,7 +13,8 @@
   }
   ,
   "fabrication_constraints": {
-    "MIN_THICKNESS": 2.0,
-    "MAX_THICKNESS": 4.5
+    "min_thickness": 2.0,
+    "max_thickness": 4.5,
+    "min_hole_diameter": 4.0
   }
 }
