@@ -1,0 +1,16 @@
+{
+  "min_thickness": 2.0,
+  "max_thickness": 4.5,
+  "weight_min": 40.0,
+  "weight_max": 150.0,
+  "force_min": 300.0,
+  "force_max": 4000.0,
+  "radius_min": 10.0,
+  "radius_max": 16.0,
+  "shoe_size_min": 36,
+  "shoe_size_max": 48,
+  "foot_length_min": 225.0,
+  "foot_length_max": 305.0,
+  "foot_width_min": 85.0,
+  "foot_width_max": 105.0
+}

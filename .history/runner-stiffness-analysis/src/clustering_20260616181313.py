@@ -1,13 +1,13 @@
 import pandas as pd
 from pathlib import Path
 
-import json
+from ruamel import yaml
 
 ROOT_DIR = Path(__file__).resolve().parent.parent
-CONFIG_PATH = ROOT_DIR / "config.json"
+CONFIG_PATH = ROOT_DIR / "config.yaml"
 
 with open(CONFIG_PATH, "r") as f:
-    config = json.load(f)
+    config = yaml.safe_load(f)
 
 def remap(value, from_min, from_max, to_min, to_max):
     if from_max == from_min:
@@ -30,7 +30,7 @@ def cluster_runners_gh(df):
     norm_weight = remap(df["runner_weight_kg"], weight_min, weight_max, 0.0, 1.0)
     norm_force = remap(df["impact_force_newtons"], force_min, force_max, 0.0, 1.0)
     
-    df["load_score"] = round(0.5 * norm_weight + 0.5 * norm_force, 2)
+    df["load_score"] = round0.5 * norm_weight + 0.5 * norm_force
     df["stiffness_profile"] = pd.qcut(df["load_score"], q=q, labels=labels)
 
     return df
