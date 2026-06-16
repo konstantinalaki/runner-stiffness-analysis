@@ -1,0 +1,45 @@
+# Runner Stiffness Analysis
+
+This project aims to analyze runner data to categorize runners into three stiffness profiles: Soft, Medium, and Firm. The analysis is performed using the Pandas library for data processing and clustering techniques.
+
+## Project Structure
+
+- **notebooks/runner_stiffness_workflow.ipynb**: Jupyter notebook containing the computational workflow for processing runner data. It includes sections for data loading, cleaning, outlier removal, and clustering runners into stiffness profiles.
+
+- **data/raw/runners.csv**: The raw dataset containing information about 5,000 runners, including attributes such as `runner_weight_kg`, `impact_force_newtons`, and `preferred_shoe_size`.
+
+- **data/processed/runners_cleaned.csv**: This file will store the cleaned dataset after processing, which will be used for clustering analysis.
+
+- **src/data_processing.py**: Python script containing functions for loading the raw data, cleaning the dataset, and removing outliers based on defined criteria.
+
+- **src/clustering.py**: Python script that implements clustering algorithms to categorize runners into three stiffness profiles based on their attributes.
+
+- **environment.yml**: Specifies the environment configuration, including dependencies required for the project, such as Pandas and any other necessary libraries.
+
+- **requirements.txt**: Lists the Python packages required for the project, ensuring that the environment can be replicated.
+
+## Workflow Overview
+
+1. **Data Loading**: Load the raw runner data from the CSV file.
+2. **Data Cleaning**: Clean the dataset by handling missing values and correcting data types.
+3. **Outlier Removal**: Identify and remove outliers based on defined criteria to ensure data quality.
+4. **Clustering**: Apply clustering algorithms to categorize runners into stiffness profiles (Soft, Medium, Firm).
+5. **Output for 3D Modeling**: The final output will include the stiffness profile of each runner along with their attributes, which can be used for 3D modeling.
+
+## Instructions
+
+1. Clone the repository.
+2. Set up the environment using the provided `environment.yml` or `requirements.txt`.
+3. Run the Jupyter notebook `runner_stiffness_workflow.ipynb` to execute the analysis.
+
+## Dataset Details
+
+The dataset consists of various attributes related to runners, which are crucial for determining their stiffness profiles. The attributes include:
+
+- `runner_weight_kg`: Weight of the runner in kilograms.
+- `impact_force_newtons`: The impact force experienced by the runner in newtons.
+- `preferred_shoe_size`: The preferred shoe size of the runner.
+
+## Outputs
+
+The primary output of this analysis will be the `runners_cleaned.csv` file, which contains the cleaned data along with the assigned stiffness profiles for each runner. This data can be utilized for further analysis or 3D modeling purposes.
