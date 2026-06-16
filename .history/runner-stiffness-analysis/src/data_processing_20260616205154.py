@@ -70,7 +70,7 @@ def save_cleaned_data(data, output_path):
 
 def main():
     #raw_data_path = ROOT_DIR / 'data' / 'raw' / 'runners.csv'  #for testing
-    raw_data_path = ROOT_DIR / 'data' / 'raw' / 'generate_runners.csv'   #generated dataset for visualization
+    raw_data_path = ROOT_DIR / 'data' / 'raw' / 'runners.csv'   #
     cleaned_data_path = ROOT_DIR / 'data' / 'processed' / 'runners_cleaned.csv'
     
     # Load the data
