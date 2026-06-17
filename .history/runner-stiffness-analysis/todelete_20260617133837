@@ -1,0 +1,18 @@
+# fetch data per runner
+runner_weight = float(runner["runner_weight_kg"])
+impact_force = float(runner["impact_force_newtons"])
+shoe_size = float(runner["preferred_shoe_size"])
+load_score = float(runner["load_score"])
+profile = runner["stiffness_profile"]
+
+# fetch config values
+weight_min = config["data_processing"]["weight_min"]
+weight_max = config["data_processing"]["weight_max"]
+
+min_thickness = config["fabrication_constraints"]["min_thickness"]
+max_thickness = config["fabrication_constraints"]["max_thickness"]
+min_hole_diameter = config["fabrication_constraints"]["min_hole_diameter"]
+
+
+
+
